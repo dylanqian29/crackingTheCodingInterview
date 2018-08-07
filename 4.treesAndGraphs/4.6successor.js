@@ -15,6 +15,10 @@ var Node = function (value) {
 let tree = new Node(20)
 tree.left = new Node(8)
 tree.right = new Node(22)
+tree.right.left = new Node(21)
+tree.right.right = new Node(25)
+tree.right.right.left = new Node(23)
+tree.right.right.right = new Node(27)
 tree.left.left = new Node(4)
 tree.left.right = new Node(12)
 tree.left.right.left = new Node(10)
@@ -52,4 +56,4 @@ const successor = (node, value) => {
 
 }
 
-successor(tree, 22)
+successor(tree, 20)
